@@ -72,10 +72,11 @@ public class GalvenaKlase {
 					
 					break;
 				case '9':
+					Saglabatrezultatus.saglabat(studenti,kriteriji);
 					
 					break;
 				case 'n':
-					
+					Nolasitrezultatus.lasit();
 					break;
 				case '0':
 					System.out.println("Programma apturēta!");
