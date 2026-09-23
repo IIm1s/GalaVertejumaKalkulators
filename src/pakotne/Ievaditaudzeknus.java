@@ -17,6 +17,8 @@ public class Ievaditaudzeknus {
 	
 	studenti = new String[studSk];
 	
+	scan.nextLine();
+	
 	// Ievada audzēkņu vārdus, uzvārdus
 	for(int i=0; i<studenti.length; i++) {
 		do {
@@ -24,7 +26,7 @@ public class Ievaditaudzeknus {
 			studenti[i] = scan.nextLine().trim();
 		} while(!studenti[i].matches("^[\\p{L} ]+$"));
 	}
-	scan.close();;
+	scan.close();
 	
 	return studenti;
 	}

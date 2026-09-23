@@ -18,6 +18,8 @@ public class Ievaditkriterijus {
 	
 		kriteriji = new String[kritSk];
 		
+		scan.nextLine();
+		
 		for(int i=0; i<kriteriji.length; i++) {
 			do {
 				System.out.println("Ievadi "+(i+1)+". kritēriju");
