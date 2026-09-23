@@ -3,7 +3,7 @@ package pakotne;
 import java.util.Scanner;
 
 public class Ievaditaudzeknus {
-	static String[] skaits(){
+	static String[] skaits(String[]studenti){
 	int studSk;
 	Scanner scan = new Scanner(System.in);
 	do {
@@ -15,7 +15,7 @@ public class Ievaditaudzeknus {
 		studSk = scan.nextInt();
 	}while(studSk<1);
 	
-	String[] studenti = new String[studSk];
+	studenti = new String[studSk];
 	
 	// Ievada audzēkņu vārdus, uzvārdus
 	for(int i=0; i<studenti.length; i++) {

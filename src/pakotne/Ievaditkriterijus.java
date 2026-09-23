@@ -3,7 +3,7 @@ package pakotne;
 import java.util.Scanner;
 
 public class Ievaditkriterijus {
-	static String[] kriterijas(){
+	static String[] kriterijas(String[]kriteriji){
 		Scanner scan = new Scanner(System.in);
 		int kritSk;
 		do {
@@ -16,7 +16,7 @@ public class Ievaditkriterijus {
 		}while(kritSk<1);
 		
 	
-		String[] kriteriji = new String[kritSk];
+		kriteriji = new String[kritSk];
 		
 		for(int i=0; i<kriteriji.length; i++) {
 			do {

@@ -29,7 +29,7 @@ public class GalvenaKlase {
 						+ "7. -Labot iegūto vērtējumu\n"
 						+ "8. -Aprēķināt gala vērtējumu\n"
 						+ "9. -Saglabāt rezultātus failā\n"
-						+ "N.-Nolasīt rezultātus no faila\n"
+						+ "n.-Nolasīt rezultātus no faila\n"
 						+ "0 -stop");
 				izvele = scan.next().charAt(0);
 				izvele = Character.toLowerCase(izvele);
@@ -37,22 +37,22 @@ public class GalvenaKlase {
 				
 				case '1':
 					
-					Ievaditaudzeknus.skaits();
+					Ievaditaudzeknus.skaits(studenti);
 					
 					break;
 				case '2':
 					
-					Ievaditkriterijus.kriterijas();
+					Ievaditkriterijus.kriterijas(kriteriji);
 					
 					break;
 				case '3':
 					
-					Kriterijasvars.svars(kriteriji);
+					Kriterijasvars.svars(kriteriji,kriterijaSvars);
 					
 					break;
 				case '4':
 					
-					Ievaditvertejumus.vertejumi(studenti,kriteriji);
+					Ievaditvertejumus.vertejumi(studenti,kriteriji,kriterijaVertejums);
 					
 					break;
 				case '5':
@@ -68,13 +68,13 @@ public class GalvenaKlase {
 					break;
 				case '8':
 					
-					Apreikinigalvert.apreikini(studenti,kriteriji,kriterijaSvars,kriterijaVertejums);
+					Apreikinigalvert.apreikini(studenti,kriteriji,kriterijaSvars,kriterijaVertejums,semestraVertejums);
 					
 					break;
 				case '9':
 					
 					break;
-				case 'N':
+				case 'n':
 					
 					break;
 				case '0':
@@ -83,23 +83,9 @@ public class GalvenaKlase {
 					default:
 					System.out.println("Drabība nepastāv!");
 				}
+			
 				
 			}while(izvele != '0');
 			scan.close();
-		
-		
-		
-		
-		
-		
-		
-		
-	
-		
-		
-		
-		
-		
-		
 	}
 }

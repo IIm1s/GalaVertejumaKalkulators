@@ -3,10 +3,10 @@ package pakotne;
 import java.util.Scanner;
 
 public class Ievaditvertejumus {
-	static int[][] vertejumi(String[] studenti, String[] kriteriji){
+	static int[][] vertejumi(String[] studenti, String[] kriteriji, int[][]kriterijaVertejums){
 		Scanner scan = new Scanner(System.in);
 		
-		int[][] kriterijaVertejums = new int[studenti.length][kriteriji.length];
+		kriterijaVertejums = new int[studenti.length][kriteriji.length];
 		for(int i=0; i<kriterijaVertejums.length; i++) {
 			for(int j=0; j<kriterijaVertejums[i].length; j++) {
 				do {

@@ -3,10 +3,10 @@ package pakotne;
 import java.text.DecimalFormat;
 
 public class Apreikinigalvert {
-	static double[] apreikini(String[] studenti, String[] kriteriji, int[] kriterijaSvars, int[][] kriterijaVertejums){
+	static double[] apreikini(String[] studenti, String[] kriteriji, int[] kriterijaSvars, int[][] kriterijaVertejums, double[]semestraVertejums){
 		// Gala vērtējuma aprēķināšana
 		DecimalFormat df = new DecimalFormat("0.#");
-			double[] semestraVertejums = new double[studenti.length];
+			semestraVertejums = new double[studenti.length];
 				double rezultats;
 				for(int i=0; i<studenti.length; i++) {
 					rezultats=0;

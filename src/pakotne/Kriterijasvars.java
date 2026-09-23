@@ -3,12 +3,12 @@ package pakotne;
 import java.util.Scanner;
 
 public class Kriterijasvars {
-	static int[] svars(String[]kriteriji){
+	static int[] svars(String[]kriteriji, int[]kriterijaSvars){
 		Scanner scan = new Scanner(System.in);
 		
 		int maxSvars = 100, sk = 1;
 		double atlSvars, procenti = 0.0;
-		int[] kriterijaSvars = new int[kriteriji.length];
+		kriterijaSvars = new int[kriteriji.length];
 		
 		do {
 		for(int i=0; i<kriteriji.length; i++) {
